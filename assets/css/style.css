@@ -104,7 +104,7 @@ display: inline-block;
     position: relative;
     margin-top: 46px ;
     padding-top: 50%;
-    /* background: url('/assets/img/slider/pexels-danny-meneses-943096.jpg') top center / cover no-repeat; */
+    background: url('../img/slider/pexels-danny-meneses-943096.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
