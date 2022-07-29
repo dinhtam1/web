@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav {
+display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: white;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+
+#nav li a {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+#nav > li:hover > a,
+#nav .subnav li:hover a  {
+    background-color: #ccc;
+    color: black;
+}
+
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgb(81, 75, 75,0.3);
+
+}
+
+#nav .subnav li {
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+
+#nav .subnav  a {
+    font-size: 15px;
+    line-height: 38px;
+    color: black;
+    padding: 0px 16px;   
+}
+.subnav li a {
+
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+}
+
+#header .search-icon {
+    padding: 0px 24px;
+    line-height: 46px;
+    display: block;
+    color : white;
+}
+
+#header .search-btn:hover .search-icon {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+
+
+#slider {
+    position: relative;
+    margin-top: 46px ;
+    padding-top: 50%;
+    background: url('/assets/img/slider/pexels-danny-meneses-943096.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    text-align: center;
+    bottom: 32px;
+    position: absolute;
+    color: white;
+    width: 100%;
+}
+
+#slider .text-heading {
+    margin: 10px 0px;
+    font-size: 24px;
+}
+
+#slider .text-sub {
+    margin: 15px 0px;
+}
+
+#content {
+
+}
+
+#foot {
+
+}
