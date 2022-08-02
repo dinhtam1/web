@@ -17,6 +17,10 @@ html {
     z-index: 1;
 }
 
+.clear {
+    clear: both;
+}
+
 #nav {
 display: inline-block;
 }
@@ -161,7 +165,6 @@ display: inline-block;
 
 #content .member-list {
     text-align: center;
-    overflow: hidden;
     padding: 32px 0px;
 }
 
