@@ -104,14 +104,14 @@ display: inline-block;
     position: relative;
     margin-top: 46px ;
     padding-top: 50%;
-    background: url('../img/slider/pexels-danny-meneses-943096.jpg') top center / cover no-repeat;
+    background: url('../img/JB/jb3.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
     text-align: center;
     bottom: 32px;
     position: absolute;
-    color: brown ;
+    color: white ;
     width: 100%;
 }
 
@@ -154,10 +154,36 @@ display: inline-block;
 
 #content .about-text {
     margin: 15px 0px;
-    line-height: 1.3;
+    line-height: 1.4;
     text-align: justify;
     font-size: 15px;
 }
+
+#content .member-list {
+    text-align: center;
+    overflow: hidden;
+    padding: 32px 0px;
+}
+
+#content .name-member {
+    margin: 15px 0px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.3333333%;
+}
+
+
+#content .img-member {
+    margin: 0 0 16px;
+    width: 60%;
+    border-radius: 4px;
+}
+
+
+
+
 
 
 #foot {
