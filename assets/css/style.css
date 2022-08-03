@@ -22,7 +22,7 @@ html {
 }
 
 #nav {
-display: inline-block;
+    display: inline-block;
 }
 
 #nav > li {
@@ -129,7 +129,7 @@ display: inline-block;
 }
 
 #content {
-    
+
 }
 
 #content .content-section {
@@ -172,7 +172,7 @@ display: inline-block;
     margin: 15px 0px;
 }
 
-#content .member-item {
+    #content .member-item {
     float: left;
     width: 33.3333333%;
 }
@@ -184,6 +184,63 @@ display: inline-block;
     border-radius: 4px;
 }
 
+#content .tour {
+    background-color: black;
+}
+
+#content .tickets {
+    margin-top: 40px;
+}
+
+#content .tour .content-section {
+    color: white;
+}
+
+#content .tickets li {
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+    background-color: white;
+    color: #757575!important;
+}
+
+
+
+#content .tickets .status-ticket {
+    margin: 0px 8px;
+    color: #fff!important;
+    background-color: #f44336!important;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+#content .tickets .quantity {
+    float: right;
+    margin-right: 16px;
+    padding: 0px 8px;
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    line-height: 21px;
+}
+
+#content .tour .tour-place {
+    
+}
+
+#content .tour .tour-list {
+    
+    float: left;
+    padding-left: 8px;
+    width: 100%;
+    padding-right: 8px;
+}
+
+#content .tour .img-place {
+    width: 33.333333333%;
+}
 
 
 
