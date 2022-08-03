@@ -226,22 +226,67 @@ html {
     line-height: 21px;
 }
 
-#content .tour .tour-place {
-    
+#content .tour-place {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 32px 0px;
 }
 
-#content .tour .tour-list {
-    
+#content .tour-list {
+
+    padding: 0px 8px;
     float: left;
-    padding-left: 8px;
+    width: 33.3333%;
+}
+
+#content .place-body {
+    color: black;
+    background-color: white;
+    padding: 0.5px 16px;
+}
+
+.place-body .place-heading {
+    margin: 15px 0px;
+    font-size: 15px;
+    
+}
+
+.place-body .place-time {
+    opacity: 0.6;
+    margin: 15px 0px;
+}
+
+.place-body .place-desc {
+    margin: 15px 0px;
+    
+}
+
+
+.place-body .place-buy-btn {
+    line-height: 23px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+}
+
+.tour-list img:hover {
+    opacity: 0.6;
+}
+
+.tour-list .place-buy-btn:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+
+
+#content .img-place {
     width: 100%;
-    padding-right: 8px;
+    display: block;
 }
-
-#content .tour .img-place {
-    width: 33.333333333%;
-}
-
 
 
 
