@@ -186,6 +186,7 @@ html {
 
 #content .tour {
     background-color: black;
+    width: auto;
 }
 
 #content .tickets {
@@ -286,6 +287,10 @@ html {
 #content .img-place {
     width: 100%;
     display: block;
+}
+
+#content .tour-list {
+    margin-bottom: 16px;
 }
 
 
