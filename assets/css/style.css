@@ -299,3 +299,85 @@ html {
 #foot {
 
 }
+
+.modal {
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    justify-content: center;
+    display: flex;
+    display: none;
+}
+
+.modal .modal-container {
+    position: relative;
+    width: 900px;
+    background-color: white;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+}
+
+.header-modal {
+    color: white;
+    padding: 42px 16px;
+    background-color: #009688;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    min-height: 130px;
+    
+}
+.close-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 14px 16px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.close-modal:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 0px 16px;
+
+    
+}
+
+.modal-label {
+    display: block;
+    margin: 16px 0px;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.modal-pay-btn {
+    width: 100%;
+    margin: 16px 0px;
+    padding: 16px;
+    background-color: #009688;
+    color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.modal-footer {
+    margin-bottom: 30px;
+    margin-top: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
