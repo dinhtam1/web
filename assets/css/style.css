@@ -315,12 +315,13 @@ html {
     display: none;
 }
 
-.modal .modal-container {
+.modal-container {
     position: relative;
     width: 900px;
     background-color: white;
     min-height: 200px;
     max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 1s;
 }
 
 .header-modal {
@@ -391,5 +392,17 @@ html {
 
 .modal.open {
     display: flex;
+}
+
+@keyframes modalFadeIn{
+    from {
+        opacity: 0.2;
+       transform : translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform : translateY(0px);
+    }
 }
 
