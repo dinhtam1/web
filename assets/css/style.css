@@ -3,9 +3,47 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.clear {
+    clear: both;
+}
+
+/* Common */
+
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    padding: 0px 8px;
+    float: left;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.333333%;
+}
+
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/* Main */
 
 #header {
     height: 46px;
@@ -17,15 +55,12 @@ html {
     z-index: 1;
 }
 
-.clear {
-    clear: both;
-}
 
 #nav {
     display: inline-block;
 }
 
-#nav > li {
+#nav>li {
     display: inline-block;
 }
 
@@ -33,7 +68,7 @@ html {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     text-transform: uppercase;
     color: white;
     line-height: 46px;
@@ -47,8 +82,8 @@ html {
 
 
 
-#nav > li:hover > a,
-#nav .subnav li:hover a  {
+#nav>li:hover>a,
+#nav .subnav li:hover a {
     background-color: #ccc;
     color: black;
 }
@@ -59,7 +94,7 @@ html {
     position: absolute;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0 0 10px rgb(81, 75, 75,0.3);
+    box-shadow: 0 0 10px rgb(81, 75, 75, 0.3);
 
 }
 
@@ -72,15 +107,14 @@ html {
 }
 
 
-#nav .subnav  a {
+#nav .subnav a {
     font-size: 15px;
     line-height: 38px;
     color: black;
-    padding: 0px 16px;   
+    padding: 0px 16px;
 }
-.subnav li a {
 
-}
+.subnav li a {}
 
 #nav .nav-arrow-down {
     font-size: 12px;
@@ -94,7 +128,7 @@ html {
     padding: 0px 24px;
     line-height: 46px;
     display: block;
-    color : white;
+    color: white;
 }
 
 #header .search-btn:hover .search-icon {
@@ -106,7 +140,7 @@ html {
 
 #slider {
     position: relative;
-    margin-top: 46px ;
+    margin-top: 46px;
     padding-top: 50%;
     background: url('../img/JB/jb3.jpg') top center / cover no-repeat;
 }
@@ -115,7 +149,7 @@ html {
     text-align: center;
     bottom: 32px;
     position: absolute;
-    color: white ;
+    color: white;
     width: 100%;
 }
 
@@ -128,9 +162,7 @@ html {
     margin: 15px 0px;
 }
 
-#content {
-
-}
+#content {}
 
 #content .content-section {
     width: 800px;
@@ -141,7 +173,7 @@ html {
 
 }
 
-#content .header-section  {
+#content .header-section {
     text-align: center;
     margin: 10px 0px;
     font-size: 30px;
@@ -164,17 +196,13 @@ html {
 }
 
 #content .member-list {
-    text-align: center;
     padding: 32px 0px;
 }
 
+
+
 #content .name-member {
     margin: 15px 0px;
-}
-
-#content .member-item {
-    float: left;
-    width: 33.3333333%;
 }
 
 
@@ -202,15 +230,15 @@ html {
     border-bottom: 1px solid #ddd;
     padding: 8px 16px;
     background-color: white;
-    color: #757575!important;
+    color: #757575 !important;
 }
 
 
 
 #content .tickets .status-ticket {
     margin: 0px 8px;
-    color: #fff!important;
-    background-color: #f44336!important;
+    color: #fff !important;
+    background-color: #f44336 !important;
     padding-left: 8px;
     padding-right: 8px;
     display: inline-block;
@@ -228,17 +256,9 @@ html {
 }
 
 #content .tour-place {
-    margin-left: -8px;
-    margin-right: -8px;
     padding: 32px 0px;
 }
 
-#content .tour-list {
-
-    padding: 0px 8px;
-    float: left;
-    width: 33.3333%;
-}
 
 #content .place-body {
     color: black;
@@ -249,7 +269,7 @@ html {
 .place-body .place-heading {
     margin: 15px 0px;
     font-size: 15px;
-    
+
 }
 
 .place-body .place-time {
@@ -259,7 +279,7 @@ html {
 
 .place-body .place-desc {
     margin: 15px 0px;
-    
+
 }
 
 
@@ -295,12 +315,18 @@ html {
     margin-bottom: 16px;
 }
 
-
-
-
-#foot {
-
+.contact {
+    height: 500px;
 }
+
+.contact .contact-content {
+    margin-top: 32px;
+}
+
+
+
+
+#foot {}
 
 .modal {
     align-items: center;
@@ -332,8 +358,9 @@ html {
     font-size: 30px;
     letter-spacing: 4px;
     min-height: 130px;
-    
+
 }
+
 .close-modal {
     position: absolute;
     right: 0;
@@ -343,6 +370,7 @@ html {
     opacity: 0.6;
     cursor: pointer;
 }
+
 .close-modal:hover {
     opacity: 1;
 }
@@ -350,7 +378,7 @@ html {
 .modal-body {
     padding: 0px 16px;
 
-    
+
 }
 
 .modal-label {
@@ -394,37 +422,17 @@ html {
     display: flex;
 }
 
-.info-contact {
-    width: 49.99999%;
-    font-size: 18px;
-    font-family: sans-serif;
-}
-
-.info-contact i {
-    padding-right: 12px;
-}
 
 
-.input-contact {
-    width: 100%;
-    display: block;
-}
 
-.input-list {
-    min-width: 600px;
-    width: 49.999999%;
-    float: left;
-}
-
-@keyframes modalFadeIn{
+@keyframes modalFadeIn {
     from {
         opacity: 0.2;
-       transform : translateY(-140px);
+        transform: translateY(-140px);
     }
 
     to {
         opacity: 1;
-        transform : translateY(0px);
+        transform: translateY(0px);
     }
 }
-

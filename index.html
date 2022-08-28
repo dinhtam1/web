@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div id="header">
 
         <ul id="nav">
@@ -62,16 +63,16 @@
                     a male artist to debut at number one in the US. Bieber experimented with dance-pop in his third
                     studio album, Believe (2012), and went on to become the first artist in history with five US
                     number-one albums at age 18. Between 2013 and 2014, Bieber was involved</p>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="row member-list">
+                    <div class="col col-third text-center">
                         <p class="name-member">Justin</p>
                         <img src="./assets/img/Band/jb4.jpg" alt="" class="img-member">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="name-member">Drew</p>
                         <img src="./assets/img/Band/jb5.jpg" alt="" class="img-member">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="name-member">Bieber</p>
                         <img src="./assets/img/Band/jb6.jpg" alt="" class="img-member">
                     </div>
@@ -100,8 +101,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tour-place">
-                    <div class="tour-list">
+                <div class="row tour-place">
+                    <div class="col col-third tour-list">
                         <img src="./assets/img/Place/newyork.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">New York</h2>
@@ -110,7 +111,7 @@
                             <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="tour-list">
+                    <div class="col col-third tour-list">
                         <img src="./assets/img/Place/paris.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">Paris</h2>
@@ -119,7 +120,7 @@
                             <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="tour-list">
+                    <div class="col col-third tour-list">
                         <img src="./assets/img/Place/sanfran.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">San Francisco</h2>
@@ -134,108 +135,117 @@
 
         </div>
 
-        <div class="Contact">
-
+        <div class="contact">
             <div class="content-section">
                 <h2 class="header-section">CONTACT</h2>
                 <p class="sub-section">Fan? Drop a note!</p>
-                <div class="contact-place">
-                    <div class="info-contact">
-                        <i class="ti-location-pin">
-                        </i>
-                        Chicago, US
-                        </br>
-                        <i class="ti-microphone-alt">
-                        </i>
-                        Phone: +00 151515
-                        </br>
 
-                        <i class="ti-email">
-                        </i>
-                        Email: mail@mail.com
-                        </br>
-
+                <div class="row contact-content">
+                    <div class="col col-half">
+                        <p><i class="ti-location-pin">
+                        </i>Chicago, US</p>
+                        <p><i class="ti-microphone-alt">
+                        </i>Phone: +00 151515</p>
+                        <p><i class="ti-email">
+                        </i>Email: mail@mail.com</p>
                     </div>
-                    <div class="input-contact">
-                        <input type="text" name="firstname" placeholder="Name">
-                        <input type="text" name="firstname" placeholder="Name">
-                        <input type="text" name="firstname" placeholder="Name">
+
+                    <div class="col col-half">
+                        <div class="row">
+                            <div class="col col-half">
+                                <input type="text" name="firstname" placeholder="Name"  class="form-control">
+                            </div>
+
+                            <div class="col col-half">
+                                <input type="text" name="firstname" placeholder="Name"  class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col col-full">
+                                <input type="text" name="firstname" placeholder="Name">
+                            </div>
+                        </div>
+                        <input type="submit" value="SEND">
+                        
                     </div>
                 </div>
+                
             </div>
 
 
         </div>
+    </div>
 
-        <div id="foot">
+    <div id="foot">
 
-        </div>
+    </div>
 
-        <div class="modal js-modal">
-            <div class="modal-container js-modal-container">
-                <div class="close-modal js-close-modal">
-                    <i class="ti-close"></i>
-                </div>
-                <div class="header-modal">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="close-modal js-close-modal">
+                <i class="ti-close"></i>
+            </div>
+            <div class="header-modal">
 
-                    <i class="ti-briefcase"></i>
-                    Tickets
-
-                </div>
-
-                <div class="modal-body">
-                    <label for="" class="modal-label">
-                        <i class="ti-shopping-cart"></i>
-                        Tickets, $15 per person
-                    </label>
-                    <input type="text" class="modal-input" placeholder="How many?">
-
-                    <label for="" class="modal-label">
-                        <i class="ti-user"></i>
-                        Send To
-                    </label>
-                    <input type="text" class="modal-input" placeholder="Enter email">
-                    <button class="modal-pay-btn">PAY
-                        <i class="ti-check"></i>
-                    </button>
-
-                    <footer class="modal-footer">
-                        <p class="modal-help">Need <a href="#">help?</a></p>
-
-                    </footer>
-                </div>
+                <i class="ti-briefcase"></i>
+                Tickets
 
             </div>
+
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" placeholder="How many?">
+
+                <label for="" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input type="text" class="modal-input" placeholder="Enter email">
+                <button class="modal-pay-btn">PAY
+                    <i class="ti-check"></i>
+                </button>
+
+                <footer class="modal-footer">
+                    <p class="modal-help">Need <a href="#">help?</a></p>
+
+                </footer>
+            </div>
+
         </div>
+    </div>
 
-        <script>
-            const buyBtns = document.querySelectorAll('.js-buy-btn')
-            const modal = document.querySelector('.js-modal')
-            const closeModal = document.querySelector('.js-close-modal')
-            const modalContainer = document.querySelector('.js-modal-container')
-            function showBuyTickets() {
-                modal.classList.add('open')
-            }
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-btn')
+        const modal = document.querySelector('.js-modal')
+        const closeModal = document.querySelector('.js-close-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
 
-            function hideBuyTickets() {
-                modal.classList.remove('open')
-            }
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
 
-            for (const buyBtn of buyBtns) {
-                buyBtn.addEventListener('click', showBuyTickets)
-            }
-
-
-            closeModal.addEventListener('click', hideBuyTickets)
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
 
 
-            modal.addEventListener('click', hideBuyTickets)
+        closeModal.addEventListener('click', hideBuyTickets)
 
-            modalContainer.addEventListener('click', function (event) {
-                event.stopPropagation()
-            })
 
-        </script>
+        modal.addEventListener('click', hideBuyTickets)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+
+    </script>
 
 </body>
 
