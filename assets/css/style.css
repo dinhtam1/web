@@ -20,6 +20,12 @@ html {
     margin-right: -8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     padding: 0px 8px;
     float: left;
@@ -40,6 +46,14 @@ html {
 
 .text-center {
     text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
 }
 
 
@@ -320,8 +334,48 @@ html {
 }
 
 .contact .contact-content {
-    margin-top: 32px;
+    padding: 32px 0px;
+    font-size: 18px;
 }
+
+
+.contact-content i {
+    width: 30px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.contact .contact-form {
+    
+    font-size: 15px;
+}
+
+.contact .form-control {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form .form-submit-btn {
+    margin: 16px 0px;
+    float: right;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+
+
 
 
 
