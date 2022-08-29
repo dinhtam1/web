@@ -371,6 +371,11 @@ html {
 .contact-form .form-submit-btn:hover {
     background-color: #ccc;
     color: #000;
+    cursor: pointer;
+}
+
+.map-section {
+    filter: grayscale(50%);
 }
 
 
@@ -380,7 +385,37 @@ html {
 
 
 
-#foot {}
+#foot {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+
+#foot .social-list a{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.6);
+    
+}
+
+#foot .social-list a:hover {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+#foot .copyright {
+    color: rgb(0, 0, 0, 0.6);
+    margin : 15px 0px ;
+}
+
+#foot .copyright a {
+    color: rgb(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
 
 .modal {
     align-items: center;
