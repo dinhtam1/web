@@ -57,6 +57,9 @@ html {
     margin-top: 16px !important;
 }
 
+#main {
+    overflow: hidden;
+}
 
 /* Main */
 
@@ -68,6 +71,7 @@ html {
     right: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 
@@ -135,20 +139,27 @@ html {
     font-size: 12px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
+    
 }
-
+#header .mobile-menu-btn,
 #header .search-icon {
     padding: 0px 24px;
     line-height: 46px;
     display: block;
     color: white;
 }
-
+#header .mobile-menu-btn:hover ,
 #header .search-btn:hover .search-icon {
     cursor: pointer;
     background-color: #f44336;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
 }
 
 
@@ -181,6 +192,7 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
@@ -208,6 +220,7 @@ html {
     line-height: 1.4;
     text-align: justify;
     font-size: 15px;
+    width: 100%;
 }
 
 #content .member-list {
@@ -228,8 +241,8 @@ html {
 }
 
 #content .tour {
-    background-color: black;
     width: auto;
+    background-color: black;
 }
 
 #content .tickets {

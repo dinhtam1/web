@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
     <title>Justin Bieber</title>
     
@@ -37,6 +38,10 @@
         <div class="search-btn">
             <i class="search-icon ti-search"></i>
         </div>
+
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="ti-menu"></i>
+        </div>
     </div>
 
     <div id="slider">
@@ -66,15 +71,15 @@
                     studio album, Believe (2012), and went on to become the first artist in history with five US
                     number-one albums at age 18. Between 2013 and 2014, Bieber was involved</p>
                 <div class="row member-list">
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="name-member">Justin</p>
                         <img src="./assets/img/Band/jb4.jpg" alt="" class="img-member">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="name-member">Drew</p>
                         <img src="./assets/img/Band/jb5.jpg" alt="" class="img-member">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="member-item col col-third text-center">
                         <p class="name-member">Bieber</p>
                         <img src="./assets/img/Band/jb6.jpg" alt="" class="img-member">
                     </div>
@@ -103,7 +108,7 @@
                     </ul>
                 </div>
                 <div class="row tour-place">
-                    <div class="col col-third tour-list">
+                    <div class="tour-item col col-third tour-list">
                         <img src="./assets/img/Place/newyork.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">New York</h2>
@@ -112,7 +117,7 @@
                             <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="col col-third tour-list">
+                    <div class="tour-item col col-third tour-list">
                         <img src="./assets/img/Place/paris.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">Paris</h2>
@@ -121,7 +126,7 @@
                             <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="col col-third tour-list">
+                    <div class="tour-item col col-third tour-list">
                         <img src="./assets/img/Place/sanfran.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">San Francisco</h2>
@@ -236,10 +241,34 @@
     </div>
 
     <script>
+
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
         const buyBtns = document.querySelectorAll('.js-buy-btn')
         const modal = document.querySelector('.js-modal')
         const closeModal = document.querySelector('.js-close-modal')
         const modalContainer = document.querySelector('.js-modal-container')
+        var headerHeight = header.clientHeight;
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        mobileMenu.onclick = function(){
+
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        for(var i = 0 ; i < menuItems.length ; i++){
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(){
+                header.style.height = null;
+            }
+        }
+
         function showBuyTickets() {
             modal.classList.add('open')
         }
