@@ -18,12 +18,12 @@
     <div id="header">
 
         <ul id="nav">
-            <li><a href="#slider">Home</a></lim>
+            <li><a href="#">Home</a></lim>
             <li><a href="#story">Story</a></li>
             <li><a href="#tour">Tour</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
-                <a href="#">More
+                <a href="#1">More
                     <i class="nav-arrow-down ti-angle-down"></i>
                 </a>
                 <ul class="subnav">
@@ -71,15 +71,15 @@
                     studio album, Believe (2012), and went on to become the first artist in history with five US
                     number-one albums at age 18. Between 2013 and 2014, Bieber was involved</p>
                 <div class="row member-list">
-                    <div class="member-item col col-third text-center">
+                    <div class="member-item col col-third s-col-full text-center">
                         <p class="name-member">Justin</p>
                         <img src="./assets/img/Band/jb4.jpg" alt="" class="img-member">
                     </div>
-                    <div class="member-item col col-third text-center">
+                    <div class="member-item col col-third s-col-full text-center">
                         <p class="name-member">Drew</p>
                         <img src="./assets/img/Band/jb5.jpg" alt="" class="img-member">
                     </div>
-                    <div class="member-item col col-third text-center">
+                    <div class="member-item col col-third s-col-full text-center">
                         <p class="name-member">Bieber</p>
                         <img src="./assets/img/Band/jb6.jpg" alt="" class="img-member">
                     </div>
@@ -108,31 +108,31 @@
                     </ul>
                 </div>
                 <div class="row tour-place">
-                    <div class="tour-item col col-third tour-list">
+                    <div class="tour-item col col-third s-col-full tour-list">
                         <img src="./assets/img/Place/newyork.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">New York</h2>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
+                            <button class="place-buy-btn js-buy-btn s-full-width">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="tour-item col col-third tour-list">
+                    <div class="tour-item col col-third s-col-full  tour-list">
                         <img src="./assets/img/Place/paris.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">Paris</h2>
                             <p class="place-time">Sat 28 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
+                            <button class="place-buy-btn js-buy-btn s-full-width ">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="tour-item col col-third tour-list">
+                    <div class="tour-item col col-third s-col-full tour-list">
                         <img src="./assets/img/Place/sanfran.jpg" alt="" class="img-place">
                         <div class="place-body">
                             <h2 class="place-heading">San Francisco</h2>
                             <p class="place-time">Sun 29 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
+                            <button class="btn place-buy-btn js-buy-btn s-full-width">Buy Tickets</button>
                         </div>
                     </div>
 
@@ -151,18 +151,18 @@
                         <p><i class="ti-location-pin">
                             </i>Chicago, US</p>
                         <p><i class="ti-microphone-alt">
-                            </i>Phone: +00 151515</p>
+                            </i>Phone: <a href="tel:0905833248">0905833248</a></p>
                         <p><i class="ti-email">
-                            </i>Email: mail@mail.com</p>
+                            </i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
 
-                    <div class="col col-half contact-form ">
+                    <div class="col col-half contact-form s-col-full">
                         <div class="row">
-                            <div class="col col-half">
+                            <div class="col col-half s-col-full">
                                 <input type="text" name="firstname" required placeholder="Name" class="form-control">
                             </div>
 
-                            <div class="col col-half">
+                            <div class="col col-half s-col-full s-mt-8">
                                 <input type="text" name="firstname" required placeholder="Email" class="form-control">
                             </div>
 
@@ -174,7 +174,7 @@
                             </div>
                         </div>
 
-                        <input class="form-submit-btn" type="submit" value="SEND">
+                        <input class="form-submit-btn s-full-width" type="submit" value="SEND">
 
                     </div>
                 </div>
@@ -260,14 +260,9 @@
                 header.style.height = null;
             }
         }
+        
 
-        for(var i = 0 ; i < menuItems.length ; i++){
-            var menuItem = menuItems[i];
-
-            menuItem.onclick = function(){
-                header.style.height = null;
-            }
-        }
+        
 
         function showBuyTickets() {
             modal.classList.add('open')
@@ -290,6 +285,20 @@
         modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
+
+        for(var i = 0 ; i < menuItems.length ; i++){
+            var menuItem = menuItems[i];
+            var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.contains('subnav');
+
+            menuItem.onclick = function(){
+                if(isParentMenu){
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
+            }
+        }
 
     </script>
 

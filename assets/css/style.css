@@ -58,7 +58,7 @@ html {
 }
 
 #main {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Main */
@@ -71,9 +71,39 @@ html {
     right: 0;
     left: 0;
     z-index: 1;
-    overflow: hidden;
+    
 }
 
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    
+}
+#header .mobile-menu-btn,
+#header .search-icon {
+    padding: 0px 24px;
+    line-height: 46px;
+    display: block;
+    color: white;
+}
+#header .mobile-menu-btn:hover ,
+#header .search-btn:hover .search-icon {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top : 0;
+    right: 0;
+    display: none;
+}
 
 #nav {
     display: inline-block;
@@ -139,28 +169,7 @@ html {
     font-size: 12px;
 }
 
-#header .mobile-menu-btn,
-#header .search-btn {
-    float: right;
-    
-}
-#header .mobile-menu-btn,
-#header .search-icon {
-    padding: 0px 24px;
-    line-height: 46px;
-    display: block;
-    color: white;
-}
-#header .mobile-menu-btn:hover ,
-#header .search-btn:hover .search-icon {
-    cursor: pointer;
-    background-color: #f44336;
-}
 
-#header .mobile-menu-btn:hover{
-    background-color: #ccc;
-    color: #000;
-}
 
 
 
@@ -168,12 +177,12 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('../img/JB/jb3.jpg') top center / cover no-repeat;
+    background: url('../img/JB/jb32.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
     text-align: center;
-    bottom: 32px;
+    bottom: 32px; 
     position: absolute;
     color: white;
     width: 100%;
@@ -182,6 +191,7 @@ html {
 #slider .text-heading {
     margin: 10px 0px;
     font-size: 24px;
+    text-shadow: 0 0 6px black;
 }
 
 #slider .text-sub {
@@ -321,6 +331,11 @@ html {
     text-decoration: none;
 }
 
+.btn {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
 .tour-list img:hover {
     opacity: 0.6;
 }
@@ -349,7 +364,21 @@ html {
 
 .contact .contact-content {
     padding: 32px 0px;
+}
+
+.contact .contact-info {
+
     font-size: 18px;
+}
+
+.contact .contact-info a {
+    color : #101aef;
+    opacity: 0.7;
+    
+}
+
+.contact .contact-info a:hover {
+    opacity: 1;
 }
 
 
