@@ -20,8 +20,8 @@
     }
 
     #foot .social-list a{
-        padding: 0px 10px;
-        font-size: 36px;
+        padding: 0px 6px;
+        font-size: 24px;
         
     }
     #foot .copyright a {
@@ -37,6 +37,7 @@
     .contact .contact-info {
         font-size: 15px;
         line-height: 2;
+        width: 100%;
     }
 }
 
@@ -50,7 +51,7 @@
 
 
 /* Mobile */
-@media (max-width : 739px){
+@media (max-width : 46.1875em){
     
     .s-mt-8 {
         margin-top: 8px !important;
@@ -102,6 +103,7 @@
 
     .contact .contact-info {
         margin-bottom: 32px;
+        
     }
 
     .contact-form .form-submit-btn {
